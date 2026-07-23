@@ -97,9 +97,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-zinc-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mb-6 font-body font-normal"
+          className="text-zinc-300 text-[0.92rem] sm:text-base md:text-lg leading-[1.5] sm:leading-relaxed max-w-[min(88vw,30rem)] sm:max-w-2xl px-5 sm:px-0 mx-auto mb-6 font-body font-normal"
         >
-          I build AI-powered automation systems that eliminate repetitive work, streamline operations, and help businesses scale without increasing manual effort. From AI agents and workflow automation to custom backend integrations, I help turn repetitive processes into intelligent systems.
+          <span className="block sm:hidden">
+            I build AI automation systems that streamline operations, automate repetitive work, and help businesses scale efficiently.
+          </span>
+          <span className="hidden sm:block">
+            I build AI-powered automation systems that eliminate repetitive work, streamline operations, and help businesses scale without increasing manual effort. From AI agents and workflow automation to custom backend integrations, I help turn repetitive processes into intelligent systems.
+          </span>
         </motion.p>
 
         <motion.div
