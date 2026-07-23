@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[85vh] sm:min-h-[88vh] pt-36 sm:pt-44 pb-16 bg-[#03020D]/40 overflow-hidden flex flex-col items-center justify-center text-center"
+      className="relative min-h-[85vh] sm:min-h-[88vh] pt-36 sm:pt-44 pb-10 sm:pb-16 bg-[#03020D]/40 overflow-hidden flex flex-col items-center justify-center text-center"
     >
       {/* Magic Rings Background Layer */}
       <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden opacity-55 pointer-events-none">
@@ -158,7 +158,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-6 flex flex-col items-center gap-1 text-zinc-500 hover:text-zinc-300 transition-colors cursor-pointer"
+          className="mt-4 sm:mt-6 flex flex-col items-center gap-1 text-zinc-500 hover:text-zinc-300 transition-colors cursor-pointer"
           onClick={(e) => {
             const el = document.getElementById("featured-systems");
             if (el) {

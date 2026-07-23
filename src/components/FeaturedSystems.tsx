@@ -401,7 +401,7 @@ export default function FeaturedSystems({ onOpenDemoModal }: FeaturedSystemsProp
   return (
     <section
       id="featured-systems"
-      className="relative w-full overflow-hidden py-20 sm:py-28 bg-[#03020D] border-t border-b border-white/5"
+      className="relative w-full overflow-hidden py-16 sm:py-28 bg-[#03020D] border-t border-b border-white/5"
     >
       {/* Background Ambient Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -z-10 h-[600px] w-[800px] bg-gradient-to-tr from-violet-900/10 via-[#5F62FF]/10 to-transparent blur-[140px] rounded-full pointer-events-none" />
