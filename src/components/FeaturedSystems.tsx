@@ -411,7 +411,7 @@ export default function FeaturedSystems({ onOpenDemoModal }: FeaturedSystemsProp
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
           <SplitText
-            text="Automation Systems That Replace Repetitive Work"
+            text="My Recent Automation Systems"
             tag="h2"
             splitType="words"
             delay={35}

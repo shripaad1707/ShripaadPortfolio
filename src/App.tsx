@@ -54,13 +54,13 @@ export default function App() {
         {/* 5. About Me Section */}
         <Story />
 
-        {/* 6. Currently Learning Section */}
-        <CurrentlyLearning />
-
-        {/* 8. Technology Showcase Logos */}
+        {/* 6. Technology Showcase Logos */}
         <TrustedPlatforms />
 
-        {/* 9. Contact Section */}
+        {/* 7. Currently Learning Section */}
+        <CurrentlyLearning />
+
+        {/* 8. Contact Section */}
         <Contact onOpenResumeModal={() => setIsResumeModalOpen(true)} />
       </main>
 
