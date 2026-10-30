@@ -83,6 +83,42 @@ export const WORK = [
   }
 ];
 
+export const ENGINEERING = [
+  {
+    id: 'ledgerlens',
+    name: 'Ledgerlens',
+    tag: 'Invoice AI · GST',
+    line: 'Reads Indian GST invoices — PDFs and phone photos — with Gemini, then checks every field with fixed GST rules before anything is paid.',
+    metric: '0 of 240',
+    metricLabel: 'wrong invoices auto-approved',
+    points: ['GSTIN checksum, IGST vs CGST + SGST and arithmetic rules', 'Crash-safe PostgreSQL job queue with lease + fencing', 'Reviewer screen with the original page beside the values'],
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'Gemini'],
+    tests: 316
+  },
+  {
+    id: 'gauge',
+    name: 'Gauge',
+    tag: 'LLM evaluation',
+    line: 'Regression testing for AI features: runs two prompt or model versions on the same cases and says better, worse or "not enough evidence" — with statistics.',
+    metric: '0 → 24/24',
+    metricLabel: 'invoices fully correct after a prompt rewrite',
+    points: ['Paired significance tests + detectable-change estimate', 'LLM judges gated until calibrated against a person', 'CI gate, resumable runs and a web comparison view'],
+    stack: ['Python', 'SQLite', 'Statistics', 'Gemini'],
+    tests: 148
+  },
+  {
+    id: 'vaultline',
+    name: 'Vaultline',
+    tag: 'Permission-aware RAG',
+    line: 'A company chatbot that answers only from documents the asker may read — permissions enforced inside PostgreSQL, before the model sees anything.',
+    metric: '0 of 972',
+    metricLabel: 'leak checks failed on Gemini',
+    points: ['Row-level security between companies', 'Allow lists applied inside hybrid vector + keyword search', 'Canary strings in every restricted doc to prove no leaks'],
+    stack: ['Python', 'PostgreSQL 16', 'RAG', 'Gemini'],
+    tests: 62
+  }
+];
+
 export const SYSTEMS = [
   {
     id: 'whatsapp',
@@ -164,11 +200,11 @@ export const SYSTEMS = [
 
 export const RENDERS = [
   { id: 'solenne', name: 'Solenne serum', image: 'img/renders/solenne.webp' },
-  { id: 'fuego', name: 'Fuego Lento hot sauce', image: 'img/renders/fuego.webp' },
-  { id: 'ember', name: 'Ember & Oak candle', image: 'img/renders/ember.webp' },
+  { id: 'sneaker', name: 'Runner sneaker', image: 'img/renders/sneaker.webp' },
+  { id: 'villa', name: 'Modern villa', image: 'img/renders/villa.webp' },
   { id: 'tide', name: 'Tidewater soap', image: 'img/renders/tide.webp' },
   { id: 'nova', name: 'NOVA headphones', image: 'img/work/nova-hero.webp' },
-  { id: 'nova-detail', name: 'NOVA, close-up', image: 'img/work/nova-detail.webp' }
+  { id: 'earbuds', name: 'Wireless earbuds', image: 'img/renders/earbuds.webp' }
 ];
 
 export const UGC = [

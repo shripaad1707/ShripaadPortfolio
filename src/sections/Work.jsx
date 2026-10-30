@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useReducedMotion, useScroll, useTransform } from 'motion/react';
-import { MaskHeading, Reveal, useMediaQuery } from '../lib/motion.jsx';
+import { MaskHeading, Reveal, Stagger, staggerItem, useMediaQuery } from '../lib/motion.jsx';
 import { Eyebrow } from './About.jsx';
-import { WORK } from '../content.js';
+import { ENGINEERING, WORK } from '../content.js';
 import { goTo } from './Nav.jsx';
 
 const THEMES = ['dark', 'cream', 'lime', 'dark', 'cream'];
@@ -99,13 +99,51 @@ export default function Work() {
             <MaskHeading className="h2" lines={['Things I’ve designed,', <>built & <span className="hl">shipped.</span></>]} />
           </div>
           <Reveal as="p" className="lead" delay={0.15}>
-            Products, client-style systems and experiments — every one of them live. Scroll through the stack, then click in.
+            Live products, client-style builds and engineering projects. Scroll through the stack, then click in.
           </Reveal>
         </div>
         <div className="stack" ref={ref}>
           {WORK.map((p, i) => (
             <Card key={p.id} p={p} i={i} total={WORK.length} progress={scrollYProgress} stack={desktop} />
           ))}
+        </div>
+
+        <div className="eng">
+          <div className="eng__head">
+            <span className="mono eng__label">ENGINEERING PROJECTS</span>
+            <h3 className="eng__title">
+              Three Python systems, one idea: <span className="hl">the model proposes, code decides.</span>
+            </h3>
+          </div>
+          <Stagger className="eng__grid" stagger={0.08}>
+            {ENGINEERING.map((e, k) => (
+              <motion.article key={e.id} className="eng-card" variants={staggerItem()}>
+                <div className="eng-card__top">
+                  <span className="mono eng-card__n">0{k + 1}</span>
+                  <span className="mono eng-card__tag">{e.tag}</span>
+                </div>
+                <h4 className="eng-card__name">{e.name}</h4>
+                <p className="eng-card__line">{e.line}</p>
+                <div className="eng-card__metric">
+                  <b>{e.metric}</b>
+                  <small>{e.metricLabel}</small>
+                </div>
+                <ul className="eng-card__points">
+                  {e.points.map(pt => (
+                    <li key={pt}>{pt}</li>
+                  ))}
+                </ul>
+                <div className="eng-card__foot">
+                  <ul className="chips">
+                    {e.stack.map(t => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
+                  <span className="mono eng-card__tests">✓ {e.tests} tests</span>
+                </div>
+              </motion.article>
+            ))}
+          </Stagger>
         </div>
       </div>
     </section>
