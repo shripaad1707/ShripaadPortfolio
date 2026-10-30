@@ -72,12 +72,12 @@ export const WORK = [
   {
     id: 'renders',
     n: '04',
-    title: '3D Product Renders',
-    kind: 'Blender · concept brands',
+    title: '3D Villa & Renders',
+    kind: 'Blender · architecture & products',
     year: '2026',
-    text: 'Studio-style product renders for concept brands — serum, hot sauce, candles, soap and headphones — lit and composed for ads and listings.',
-    tags: ['Blender', 'Cycles', 'Art direction'],
-    image: 'img/work/nova-hero.webp',
+    text: 'A modern three-storey villa modelled in Blender — terraces, landscaping and lighting — plus studio-style product renders for concept brands, made for ads and listings.',
+    tags: ['Blender', 'Cycles', 'Architectural viz', 'Art direction'],
+    image: 'img/work/villa-blender.webp',
     href: '#studio',
     cta: 'See the gallery'
   }
