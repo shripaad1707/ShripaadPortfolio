@@ -146,7 +146,12 @@ export default function Work() {
                       <li key={t}>{t}</li>
                     ))}
                   </ul>
-                  <span className="mono eng-card__tests">✓ {e.tests} tests</span>
+                  <div className="eng-card__row">
+                    <span className="mono eng-card__tests">✓ {e.tests} tests</span>
+                    <a className="eng-card__link" href={e.repo} target="_blank" rel="noreferrer">
+                      View code <span>↗</span>
+                    </a>
+                  </div>
                 </div>
               </motion.article>
             ))}

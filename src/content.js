@@ -86,6 +86,7 @@ export const WORK = [
 export const ENGINEERING = [
   {
     id: 'ledgerlens',
+    repo: 'https://github.com/shripaad1707/ledgerlens',
     shot: 'img/eng/ledgerlens.webp',
     shotUrl: 'localhost:8000 · inbox / review',
     name: 'Ledgerlens',
@@ -99,6 +100,7 @@ export const ENGINEERING = [
   },
   {
     id: 'gauge',
+    repo: 'https://github.com/shripaad1707/gauge',
     shot: 'img/eng/gauge.webp',
     shotUrl: '127.0.0.1:8765 · compare',
     name: 'Gauge',
@@ -112,6 +114,7 @@ export const ENGINEERING = [
   },
   {
     id: 'vaultline',
+    repo: 'https://github.com/shripaad1707/vaultline',
     shot: 'img/eng/vaultline.webp',
     shotUrl: '127.0.0.1:8100 · ask',
     name: 'Vaultline',

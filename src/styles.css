@@ -549,3 +549,9 @@ img, video { display: block; max-width: 100%; }
 .eng-card__shot .frame__url { font-size: 9.5px; padding: 2px 8px; }
 .eng-card__shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: transform 1.4s var(--ease); }
 .eng-card:hover .eng-card__shot img { transform: scale(1.04); }
+
+.eng-card__row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.eng-card__link { display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 16px; border-radius: 99px; background: var(--ink); color: var(--lime); font-weight: 600; font-size: 13px; transition: background-color 0.5s var(--ease); }
+.eng-card__link span { transition: transform 0.6s var(--ease); }
+.eng-card__link:hover span { transform: translate(2px, -2px); }
+.eng-card:nth-child(2) .eng-card__link { background: var(--lime); color: var(--ink); }
