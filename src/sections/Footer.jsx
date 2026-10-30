@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="container footer__row">
         <span>© 2026 Shripaad Koduri</span>
-        <span>Designed &amp; built by me · React, Motion, React Bits</span>
+        <span>Designed &amp; built by Shripaad Koduri</span>
         <a href="#top" onClick={e => goTo(e, 'top')} className="link-btn">
           Back to top <span>↑</span>
         </a>
