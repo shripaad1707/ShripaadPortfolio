@@ -3,6 +3,8 @@
 Personal portfolio of **Shripaad Koduri**, AI automation engineer & creative developer from Hyderabad.
 Built for the **Skillinf Portfolio Design Hackathon 2026**.
 
+**Live:** https://shripaad-portfolio17.vercel.app
+
 ## Highlights
 
 - **Bento hero** with a live, draggable n8n-style workflow demo: a WhatsApp lead flows through an AI agent, gets qualified, booked and synced, with a running log for three industries.
