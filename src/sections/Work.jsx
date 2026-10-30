@@ -122,6 +122,13 @@ export default function Work() {
                   <span className="mono eng-card__n">0{k + 1}</span>
                   <span className="mono eng-card__tag">{e.tag}</span>
                 </div>
+                <div className="eng-card__shot">
+                  <div className="frame__bar">
+                    <span className="frame__dots"><i /><i /><i /></span>
+                    <span className="frame__url">{e.shotUrl}</span>
+                  </div>
+                  <img src={e.shot} alt={`${e.name} running locally`} loading="lazy" />
+                </div>
                 <h4 className="eng-card__name">{e.name}</h4>
                 <p className="eng-card__line">{e.line}</p>
                 <div className="eng-card__metric">

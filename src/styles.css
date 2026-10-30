@@ -542,3 +542,10 @@ img, video { display: block; max-width: 100%; }
 .eng-card:nth-child(2) .eng-card__tests { color: var(--lime); }
 .eng-card:nth-child(2) .hl { background: none; }
 @media (max-width: 960px) { .eng__grid { grid-template-columns: 1fr; } }
+
+.eng-card__shot { border-radius: 14px; overflow: hidden; background: #101a15; box-shadow: 0 20px 40px -28px rgba(15, 31, 24, 0.5); }
+.eng-card__shot .frame__bar { height: 26px; padding: 0 10px; gap: 8px; }
+.eng-card__shot .frame__dots i { width: 7px; height: 7px; }
+.eng-card__shot .frame__url { font-size: 9.5px; padding: 2px 8px; }
+.eng-card__shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: transform 1.4s var(--ease); }
+.eng-card:hover .eng-card__shot img { transform: scale(1.04); }

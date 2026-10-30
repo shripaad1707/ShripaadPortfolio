@@ -86,6 +86,8 @@ export const WORK = [
 export const ENGINEERING = [
   {
     id: 'ledgerlens',
+    shot: 'img/eng/ledgerlens.webp',
+    shotUrl: 'localhost:8000 · inbox / review',
     name: 'Ledgerlens',
     tag: 'Invoice AI · GST',
     line: 'Reads Indian GST invoices — PDFs and phone photos — with Gemini, then checks every field with fixed GST rules before anything is paid.',
@@ -97,6 +99,8 @@ export const ENGINEERING = [
   },
   {
     id: 'gauge',
+    shot: 'img/eng/gauge.webp',
+    shotUrl: '127.0.0.1:8765 · compare',
     name: 'Gauge',
     tag: 'LLM evaluation',
     line: 'Regression testing for AI features: runs two prompt or model versions on the same cases and says better, worse or "not enough evidence" — with statistics.',
@@ -108,6 +112,8 @@ export const ENGINEERING = [
   },
   {
     id: 'vaultline',
+    shot: 'img/eng/vaultline.webp',
+    shotUrl: '127.0.0.1:8100 · ask',
     name: 'Vaultline',
     tag: 'Permission-aware RAG',
     line: 'A company chatbot that answers only from documents the asker may read — permissions enforced inside PostgreSQL, before the model sees anything.',
